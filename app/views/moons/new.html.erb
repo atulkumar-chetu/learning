@@ -1,0 +1,32 @@
+<center><h1 style="background-color:yellow;color: darkred;">  Add a new  </h1>
+
+<body style="background-color:sandybrown;">
+
+</body>
+	
+
+	
+<%= form_for @moons do |form| %>
+	<div>
+		<%= form.label :title %><br><br>  
+		<%= form.text_field :title %><br><br>
+	</div>
+
+
+	<div>
+		<%= form.label :body %><br><br>
+		<%= form.text_field :body %><br><br>
+	</div>
+
+	<div>
+		<%= form.label :about %><br><br>
+		<%= form.text_field :about %><br><br>
+	</div>
+	
+
+	<div>
+		<%= form.submit "Hit me for create"%>
+	</div>
+
+<% end %>
+		<%= link_to 'Cancel', moons_path, class:"btn btn-dark" %>

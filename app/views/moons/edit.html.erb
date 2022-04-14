@@ -1,0 +1,27 @@
+<h1 style="background-color:mediumvioletred;color: navajowhite;">Time to Update me</h1>
+<body style="background-color:yellowgreen;">
+
+</body>
+<%= form_for @moons do |f| %>
+	<div>
+		<%= f.label :title %><br><br>  
+		<%= f.text_field :title %><br><br>
+	</div>
+
+	<div>
+		<%= f.label :body %><br><br>
+		<%= f.text_field :body %><br><br>
+	</div>
+	<div>
+		<%= f.label :about %><br><br>
+		<%= f.text_field :about %><br><br>
+	</div>
+
+	
+
+	<div>
+		<%= f.submit "Hit me for Update"%>
+	</div>
+
+<%end%>
+		<%= link_to 'Cancel', moons_path, class:"btn btn-light" %>
